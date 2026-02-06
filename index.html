@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>James | Web Developer Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <h2 class="logo">James</h2>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Hi, I'm James 👋</h1>
+    <p>A passionate Web Developer building clean, functional, and responsive websites with modern technologies.</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <div class="profile-image-container">
+        <div class="image-frame">
+          <!-- Replace the src with your actual photo URL -->
+          <img src="img/my_pic.jpeg" alt="James - Web Developer" class="profile-image">
+        </div>
+      </div>
+      <div class="about-text">
+        <p>
+          I'm a dedicated web developer with expertise in HTML, CSS, Bootstrap, JavaScript, PHP, and MySQL. 
+          I specialize in building responsive websites and robust backend systems for real businesses. 
+          My approach combines clean design with functional solutions that deliver measurable results.
+        </p>
+        <p>
+          With a passion for both front-end aesthetics and back-end functionality, I create seamless user experiences 
+          that are not only visually appealing but also performant and scalable. I'm constantly learning new 
+          technologies and best practices to stay at the forefront of web development.
+        </p>
+        <div class="about-highlights">
+          <div class="highlight">5+ Projects Completed</div>
+          <div class="highlight">Responsive Design Expert</div>
+          <div class="highlight">Frontend Development</div>
+          <div class="highlight">Client-Focused Approach</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <h2>My Projects</h2>
+    <p class="projects-intro">Here are some of my recent projects with live previews. Click on any project to see more details and screenshots.</p>
+
+    <div class="projects-grid">
+      <!-- Elegance Event Planning -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80" alt="Elegance Event Planning Site" class="project-image">
+        <div class="card-content">
+          <h3>Elegance Event Planning <i class="fas fa-arrow-right"></i></h3>
+          <p>A sophisticated event planning platform with client dashboards, vendor management, and real-time booking system.</p>
+          <div class="tech-stack">
+            <span class="tech-item">HTML5</span>
+            <span class="tech-item">CSS3</span>
+            <span class="tech-item">JavaScript</span>
+            <span class="tech-item">PHP</span>
+            <span class="tech-item">MySQL</span>
+          </div>
+          <div class="project-links">
+            <a href="file:///C:/Users/hp/Desktop/RECIPE-SITE/index.html#contactvv" class="project-link">View Details</a>
+            <button class="project-link preview" data-project="elegance">Live Preview</button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Chippings Website -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Chippings Website" class="project-image">
+        <div class="card-content">
+          <h3>Chippings Website <i class="fas fa-arrow-right"></i></h3>
+          <p>Construction materials e-commerce website with WhatsApp ordering system and Google Maps integration.</p>
+          <div class="tech-stack">
+            <span class="tech-item">HTML5</span>
+            <span class="tech-item">CSS3</span>
+            <span class="tech-item">Bootstrap</span>
+            <span class="tech-item">PHP</span>
+            <span class="tech-item">Google Maps API</span>
+          </div>
+          <div class="project-links">
+            <a href="file:///C:/Users/hp/Desktop/my%20work6858/index.html" class="project-link">View Details</a>
+            <button class="project-link preview" data-project="chippings">Live Preview</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Secure Login System -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80" alt="Secure Login System" class="project-image">
+        <div class="card-content">
+          <h3>Secure Login System <i class="fas fa-arrow-right"></i></h3>
+          <p>User authentication system with PHP sessions, MySQL database, password encryption, and role-based access.</p>
+          <div class="tech-stack">
+            <span class="tech-item">PHP</span>
+            <span class="tech-item">MySQL</span>
+            <span class="tech-item">JavaScript</span>
+            <span class="tech-item">Security</span>
+            <span class="tech-item">Authentication</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">View Details</a>
+            <button class="project-link preview" data-project="login">Live Preview</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT MODALS -->
+  <div id="projectModal" class="modal-overlay">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="modalTitle">Project Details</h3>
+        <button class="close-modal">&times;</button>
+      </div>
+      
+      <div class="modal-body">
+        <div class="project-gallery" id="projectGallery">
+          <!-- Images will be dynamically added here -->
+        </div>
+        
+        <div class="project-details">
+          <h4>Project Overview</h4>
+          <p id="projectDescription">Project description will appear here.</p>
+          
+          <h4>Key Features</h4>
+          <ul class="feature-list" id="projectFeatures">
+            <!-- Features will be dynamically added here -->
+          </ul>
+          
+          <h4>Technologies Used</h4>
+          <div class="tech-stack" id="modalTechStack">
+            <!-- Tech stack will be dynamically added here -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <h2>Skills & Technologies</h2>
+    <ul class="skills">
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>Bootstrap</li>
+      <li>JavaScript</li>
+      <li>PHP</li>
+      <li>MySQL</li>
+      <li>Responsive Design</li>
+      <li>UI/UX Principles</li>
+    </ul>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <h2>Get In Touch</h2>
+    <p>Email: <strong>james.dev@example.com</strong></p>
+    <p>WhatsApp: <strong>+234 810 123 4567</strong></p>
+    
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-codepen"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 James. All rights reserved. | Web Developer Portfolio</p>
+  </footer>
+
+  <script>
+    // Navbar background change on scroll
+    window.addEventListener('scroll', function() {
+      const header = document.querySelector('header');
+      if (window.scrollY > 50) {
+        header.style.backgroundColor = 'rgba(255, 255, 255, 0.98)';
+        header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.1)';
+      } else {
+        header.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+        header.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.05)';
+      }
+    });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        if(targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if(targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 80,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+    
+    // Profile image hover effect
+    const profileImage = document.querySelector('.profile-image');
+    if(profileImage) {
+      profileImage.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-10px) scale(1.03)';
+      });
+      
+      profileImage.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateY(0) scale(1)';
+      });
+    }
+
+    // Project Modal Functionality
+    const projectModal = document.getElementById('projectModal');
+    const closeModalButton = document.querySelector('.close-modal');
+    const projectGallery = document.getElementById('projectGallery');
+    const modalTitle = document.getElementById('modalTitle');
+    const projectDescription = document.getElementById('projectDescription');
+    const projectFeatures = document.getElementById('projectFeatures');
+    const modalTechStack = document.getElementById('modalTechStack');
+    const previewButtons = document.querySelectorAll('.project-link.preview');
+
+    // Project data
+    const projects = {
+      elegance: {
+        title: "Elegance Event Planning Site",
+        description: "A sophisticated event planning platform with client dashboards, vendor management, and real-time booking system. Features include event visualization tools and integrated payment processing.",
+        images: [
+          "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80",
+          "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=2094&q=80",
+          "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+        ],
+        features: [
+          "Client Dashboard with event management",
+          "Vendor management system",
+          "Real-time booking calendar",
+          "Integrated payment processing",
+          "Event visualization tools",
+          "Responsive design for all devices"
+        ],
+        tech: ["HTML5", "CSS3", "JavaScript", "PHP", "MySQL", "Bootstrap"]
+      },
+      chippings: {
+        title: "Chippings Website",
+        description: "Construction materials e-commerce website with WhatsApp ordering system, live inventory tracking, and Google Maps integration for delivery coordination.",
+        images: [
+          "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+          "https://images.unsplash.com/photo-1600585154340-043788447ebf?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+          "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+        ],
+        features: [
+          "WhatsApp ordering system",
+          "Live inventory tracking",
+          "Google Maps integration",
+          "Product catalog with filtering",
+          "Admin dashboard for orders",
+          "Mobile-responsive design"
+        ],
+        tech: ["HTML5", "CSS3", "Bootstrap", "PHP", "Google Maps API", "JavaScript"]
+      },
+      login: {
+        title: "Secure Login System",
+        description: "User authentication system with PHP sessions, MySQL database, password encryption, and role-based access control for enterprise applications.",
+        images: [
+          "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80",
+          "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+          "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+        ],
+        features: [
+          "Secure password encryption",
+          "Role-based access control",
+          "Session management",
+          "Password recovery system",
+          "User activity logging",
+          "Admin user management"
+        ],
+        tech: ["PHP", "MySQL", "JavaScript", "Security", "Authentication", "Sessions"]
+      }
+    };
+
+    // Open modal when preview button is clicked
+    previewButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const projectId = button.getAttribute('data-project');
+        openProjectModal(projectId);
+      });
+    });
+
+    // Open project modal with data
+    function openProjectModal(projectId) {
+      const project = projects[projectId];
+      
+      // Set modal content
+      modalTitle.textContent = project.title;
+      projectDescription.textContent = project.description;
+      
+      // Clear previous content
+      projectGallery.innerHTML = '';
+      projectFeatures.innerHTML = '';
+      modalTechStack.innerHTML = '';
+      
+      // Add images to gallery
+      project.images.forEach(imageSrc => {
+        const galleryItem = document.createElement('div');
+        galleryItem.className = 'gallery-item';
+        galleryItem.innerHTML = `<img src="${imageSrc}" alt="${project.title}">`;
+        projectGallery.appendChild(galleryItem);
+      });
+      
+      // Add features list
+      project.features.forEach(feature => {
+        const featureItem = document.createElement('li');
+        featureItem.innerHTML = `<i class="fas fa-check-circle"></i> ${feature}`;
+        projectFeatures.appendChild(featureItem);
+      });
+      
+      // Add tech stack
+      project.tech.forEach(tech => {
+        const techItem = document.createElement('span');
+        techItem.className = 'tech-item';
+        techItem.textContent = tech;
+        modalTechStack.appendChild(techItem);
+      });
+      
+      // Show modal
+      projectModal.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+
+    // Close modal when close button is clicked
+    closeModalButton.addEventListener('click', () => {
+      projectModal.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    });
+
+    // Close modal when clicking outside
+    projectModal.addEventListener('click', (e) => {
+      if (e.target === projectModal) {
+        projectModal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+      }
+    });
+
+    // Animate skills on scroll
+    const skills = document.querySelectorAll('.skills li');
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          skills.forEach((skill, index) => {
+            setTimeout(() => {
+              skill.style.animation = 'none';
+              setTimeout(() => {
+                skill.style.animation = 'fadeIn 0.5s forwards';
+              }, 10);
+            }, index * 100);
+          });
+        }
+      });
+    }, { threshold: 0.5 });
+    
+    observer.observe(document.querySelector('#skills'));
+  </script>
+</body>
+</html>
